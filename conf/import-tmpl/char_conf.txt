@@ -1,0 +1,5 @@
+userid: 718293_s1
+passwd: 718293_p1
+login_ip: 127.0.0.1
+char_ip: 127.0.0.1
+server_name: Teste
