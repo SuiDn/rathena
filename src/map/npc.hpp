@@ -57,11 +57,12 @@ struct npc_data {
 	struct view_data vd;
 	struct status_change sc; //They can't have status changes, but.. they want the visual opt values.
 	struct npc_data *master_nd;
-	short class_,speed,instance_id;
+	short class_,speed;
 	char name[NPC_NAME_LENGTH+1];// display name
 	char exname[NPC_NAME_LENGTH+1];// unique npc name
 	int chat_id,touching_id;
 	unsigned int next_walktime;
+	int instance_id;
 
 	unsigned size : 2;
 
@@ -1175,6 +1176,18 @@ enum e_job_types
 	JT_4_EP17_MERMAID,
 	JT_4_JP_AB_NPC_009,
 	JT_4_JP_AB_NPC_010,
+
+	JT_4_4JOB_SILLA = 10364,
+	JT_4_4JOB_MAGGI,
+	JT_4_4JOB_ROBIN,
+	JT_4_4JOB_ROBIN_DRUNK,
+	JT_4_4JOB_LETICIA,
+	JT_4_4JOB_SERANG,
+	JT_4_4JOB_EINHAR,
+	JT_4_4JOB_SEALSTONE,
+	JT_4_4JOB_PHANTOMBOOK1,
+	JT_4_4JOB_PHANTOMBOOK2,
+	JT_4_4JOB_PHANTOMBOOK3,
 
 	JT_NEW_NPC_3RD_END = 19999,
 	NPC_RANGE3_END, // Official: JT_NEW_NPC_3RD_END=19999
